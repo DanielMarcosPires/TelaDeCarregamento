@@ -1,0 +1,42 @@
+<html>
+    <!--Criado pelo Daniel Marcos Pires-->
+    <head>
+        <title>Verificador de Idade</title>
+    </head>
+    <body>
+        <h1>Verificador de Idade:</h1>
+        <style>
+            body{
+                background-color: cyan;
+                text-align: center;
+                border:groove 30px brown;
+            }
+            h1{
+                border: groove 15px brown;
+            }
+            .s{
+                border: groove 15px brown;
+            }
+        </style>
+        <script class="s">
+           
+            var n = prompt('insira a sua idade')
+            var nome = prompt('insira o seu nome')
+           Number(n)
+            
+            try{
+            document.write(`<strong>O ${nome} possuí: ${n} anos`+'<br>')
+            if(`${n}` <= 18){
+               var s = '<h3>é jovem!</h3>'
+               document.writeln(s.toUpperCase())
+            }else{
+                var s ='<h3>é adulto!</h3>'
+               document.writeln(s.toUpperCase())
+            }
+            }catch(error){
+                document.write('error')
+            }
+        </script>
+
+    </body>
+</html>
